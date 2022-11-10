@@ -115,5 +115,69 @@
 // })
 
 
-window.scroll(0, 1000)
+// document.getElementById('open').addEventListener('click',  () => {
+//   // window.scroll(0, 1000);
+//   window.scroll({
+//     top: 1000,
+//     behavior: 'smooth'
+//   })
+// })
 
+// document.getElementById("up").addEventListener("click", () => {
+//   // window.scroll(0, 1000);
+//   // window.scrollBy({
+//   //   top: -100,
+//   //   behavior: "smooth"
+//   // });
+  
+// });
+
+// document.getElementById('goUp').addEventListener('click', () => {
+//   window.scroll({
+//     top: 0,
+//     behavior: "smooth",
+//   });
+// })
+
+// document.getElementById("down").addEventListener("click", () => {
+  
+//   document.getElementById('goUp').scrollIntoView({behavior: "smooth"})
+ 
+// });
+
+const leftModal = document.querySelector(".modal-left");
+const rightModal = document.querySelector(".modal-right");
+
+// window.addEventListener('scroll', function (event) {
+
+
+//   if (window.scrollY <= 1500) {
+//     console.log(window.scrollY);
+//     leftModal.style.left = `${window.scrollY / 4}px`;
+//     rightModal.style.right = `${window.scrollY / 4}px`;
+
+//   }
+// })
+
+
+function myScrollEffect() {
+  if (window.scrollY <= 400) {
+    console.log(window.scrollY);
+    leftModal.style.left = `${window.scrollY / 4}px`;
+    rightModal.style.right = `${window.scrollY / 4}px`;
+  }
+  else {
+    window.removeEventListener("scroll", myScrollEffect);
+  }
+}
+
+window.addEventListener("scroll", myScrollEffect);
+
+
+window.addEventListener('resize', function () {
+  // console.log(window.innerHeight, window.innerWidth);
+  if (window.innerWidth <= 960) {
+    window.removeEventListener("scroll", myScrollEffect);
+    
+  }
+})
