@@ -4,43 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lesson9 Task1</title>
-    <style>
-        /* .big{
-            width: 200px;
-            height: 500px;
-            background: linear-gradient(to top, lightgreen, lightcoral);
-        }
-        .modal-left, .modal-right{
-            width: 300px;
-            height: 100px;
-            background-color: bisque;
-            margin: 10px;
-            position: relative;
-        }
-        .modal-right{
-            position: absolute;
-            right: 0;
-        } */
-    </style>
+    <title>Lesson9 Task2</title>
+    <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-    
-    <!-- <button id="open">open</button>
-    <button id="close">close</button>
-    <div class="big"></div>
-    <button id="up">up</button>
-    <button id="down">down</button>
-    <div class="modal-left"></div>
-    <div class="modal-right"></div>
-    <div class="big"></div>
-    <button id="goUp">goUp</button>
-    <div class="big"></div>
-    <div class="big"></div> -->
 
     <div class="notebook">
-        <img src="./image/Screenshot_1.png" alt="notebook">
-        
+        <div class="left-notebook">
+            <h3>Список завдань</h3>
+        </div>
+        <div class="right-notebook">
+            <h3>Додати нове завдання</h3>
+            <input type="text" name="task" id="task">
+            <button class="btn" id="btn">Додати</button>
+        </div>
+
+        <div class="warning1">
+            <h3>Попередження!</h3>
+            <p>Останній таск зі списку Ви не можете видалити. Бе-бе-бе!</p>
+            <button class="btn-warning">X</button>
+        </div>
+
+        <div class="warning2">
+            <h3>Попередження!</h3>
+            <p>Пусте поле не можна добавити. Ха-ха-ха!</p>
+            <button class="btn-warning2">X</button>
+        </div>
+
     </div>
 
 

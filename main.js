@@ -1,183 +1,70 @@
-// alert('hello js');
 
-// window.alert("hello js");
-
-// let alert = function (message) {
-//     document.write(`sdfdsf: ${message}`);
-// }
-// window.alert("hello js");
-
-// var message = 'hello js';
-// document.write(window.message);
-
-// window.open('https://www.football24.ua', 'Football24', 'width=400, height=40, resizable=yes');
-// document.querySelector("#open").addEventListener("click", () => {
-//   window.open("https://terrikon.com/uk/", "Terrikon", "width=400, height=400, left=400, top=200, resizable=yes");
-// })
-  // -width;
-  // -height;
-  // -left
-  // -top
-//  - titlebar
-//  - menubar
-//  - toolbar
-//  - location
-//  - scrollbars
-//  - status
-//  - resizable;
-
-// let popup;
-// document.querySelector("#open").addEventListener("click", () => {
-//   popup = window.open("https://terrikon.com", "Terrikon", "width=400, height=400, left=400, top=200");
-// });
-
-// function closeWindow() {
-//     popup.close();
-// }
-// setTimeout(closeWindow, 2000);
-
-// let popup;
-// document.querySelector("#open").addEventListener("click", () => {
-//   popup = window.open("https://terrikon.com", "Terrikon", "width=400, height=400, left=400, top=200");
-// });
-// document.querySelector("#close").addEventListener("click", () => {
-//   popup.close();
-// });
+// TASK2!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 
-// let popup;
-// document.querySelector("#open").addEventListener("click", () => {
-//   popup = window.open("https://terrikon.com", "Terrikon", "width=400, height=400, left=400, top=200");
-//   popup.resizeTo(500, 300);
-// });
+btn.addEventListener('click', function () {
+  let leftNotebook = document.querySelector(".left-notebook");
+  let div = document.createElement("div");
+  div.style.display = "flex";
+  div.style.justifyContent = "start";
+  div.className = "taskLi";
 
+  let p = document.createElement("p");
+  let checkbox = document.createElement("INPUT");
+  checkbox.setAttribute("type", "checkbox");
+  checkbox.className = "checkbox";
+  checkbox.style.width = "15px";
+  checkbox.style.marginBottom = "15px";
+  checkbox.style.marginTop = "15px";
+  p.style.marginTop = "12px";
+  let block = document.querySelector(".left-notebook");
+  let task = document.querySelector("#task");
+  let btnWarning = document.querySelector(".btn-warning");
+  let warning1 = document.querySelector(".warning1");
+  let btnWarning2 = document.querySelector(".btn-warning2");
+  let warning2 = document.querySelector(".warning2");
 
-// document.write(`кiлькфсть сторінок історіїї = ${window.history.length}`)
-// history.back();
-// history.forward();
-// history.go(-3);
-// history.go(4);
+console.log(warning1);
 
-
-// document.write(`<h2>рядок запиту ${location.href}</h2>`);
-// document.write(`<h2>шлях до ресурсу ${location.pathname}</h2>`);
-// document.write(`<h2>загальна схума запиту ${location.origin}</h2>`);
-// document.write(`<h2>протокол передачі ${location.protocol}</h2>`);
-// document.write(`<h2>порт ${location.port}</h2>`);
-// document.write(`<h2>ім'я хоста ${location.host}</h2>`);
-// document.write(`<h2>хеш ${location.hash}</h2>`);
-// document.write(`<h2>пошук ${location.search}</h2>`);
-
-
-// location = 'htpps://www.google.com';
-// location.assign('htpps://www.google.com');
-
-
-// location.reload(forceReload);
-// location.replace(url);
-
-
-// navigator
-
-// document.write(navigator.userAgent);
-// let browser;
-// let uAgent = navigator.userAgent;
-// if (uAgent.indexOf('Chrome' > -1)) {
-//   browser = 'Google chrom';
-// }
-
-// document.write(browser);
-
-
-// function success(position) {
-//   let latitude = position.coords.latitude;
-//   let longitude = position.coords.longitude;
-//   let altitude = position.coords.altitude;
-//   let speed = position.coords.speed;
-//   document.write(`<h2>широта ${latitude} довгота ${longitude} висота ${altitude} швидкість ${speed}</h2>`);
-// }
-
-// function error() {
-//   document.write(`<h2>помилка при визначенні місцязнаходження</h2>`)
-// }
-
-// navigator.geolocation.getCurrentPosition(success, error);
-
-
-// window.addEventListener('scroll', function () {
-//   // console.log(event);
-//   // document.body.style.background = `rgb(0,${window.scrollY},${window.scrollY})`;
-//   if (window.scrollY < 250) {
-//   console.log(window.scrollY);
-
-//     document.body.style.background = `rgb(0,${window.scrollY},${window.scrollY})`;
-//   }
-// })
-
-
-// document.getElementById('open').addEventListener('click',  () => {
-//   // window.scroll(0, 1000);
-//   window.scroll({
-//     top: 1000,
-//     behavior: 'smooth'
-//   })
-// })
-
-// document.getElementById("up").addEventListener("click", () => {
-//   // window.scroll(0, 1000);
-//   // window.scrollBy({
-//   //   top: -100,
-//   //   behavior: "smooth"
-//   // });
-  
-// });
-
-// document.getElementById('goUp').addEventListener('click', () => {
-//   window.scroll({
-//     top: 0,
-//     behavior: "smooth",
-//   });
-// })
-
-// document.getElementById("down").addEventListener("click", () => {
-  
-//   document.getElementById('goUp').scrollIntoView({behavior: "smooth"})
- 
-// });
-
-const leftModal = document.querySelector(".modal-left");
-const rightModal = document.querySelector(".modal-right");
-
-// window.addEventListener('scroll', function (event) {
-
-
-//   if (window.scrollY <= 1500) {
-//     console.log(window.scrollY);
-//     leftModal.style.left = `${window.scrollY / 4}px`;
-//     rightModal.style.right = `${window.scrollY / 4}px`;
-
-//   }
-// })
-
-
-function myScrollEffect() {
-  if (window.scrollY <= 400) {
-    console.log(window.scrollY);
-    leftModal.style.left = `${window.scrollY / 4}px`;
-    rightModal.style.right = `${window.scrollY / 4}px`;
+  block.appendChild(div);
+  let string = document.createElement("div");
+  string.style.display = "flex";
+  div.appendChild(string);
+    if (task.value == "") {
+      warning2.style.display = "block";
+      
+    } else {
+      newString();
   }
-  else {
-    window.removeEventListener("scroll", myScrollEffect);
-  }
+
+function newString() {
+  string.append(checkbox, p);
+  p.innerText = `${task.value}`;
+  task.value = "";
 }
 
-window.addEventListener("scroll", myScrollEffect);
 
+  
+  checkbox.onclick = function () {
+    if (document.querySelectorAll(".taskLi").length < 2) {
+      console.log(warning1.style.display);
+      warning1.style.display = "block";
+    } else {
+      div.remove();
 
-window.addEventListener('resize', function () {
-  // console.log(window.innerHeight, window.innerWidth);
-  if (window.innerWidth <= 960) {
-    window.removeEventListener("scroll", myScrollEffect);
+    }
     
-  }
+  };
+
+  btnWarning.onclick = function () {
+    warning1.style.display = "none";
+  };
+
+  btnWarning2.onclick = function () {
+    warning2.style.display = "none";
+  };
+
+
+
+
 })

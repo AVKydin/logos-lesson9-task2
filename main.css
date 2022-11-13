@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.notebook{
+    width: 1200px;
+    height: 600px;
+    background-image: url('./image/Screenshot_1.png');
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    display: flex;
+}
+
+.left-notebook{
+    margin-top: 60px;
+    margin-left: 200px;
+}
+
+.right-notebook{
+    width: 220px;
+    height: 150px;
+    margin-top: 60px;
+    margin-left: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h3{
+    color: red;
+}
+
+ul{
+    display: flex;
+}
+
+input{
+    width: 200px;
+    height: 30px;
+    margin-top: 10px;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+.warning1{
+    width: 550px;
+    height: 150px;
+    background-color: pink;
+    position: absolute;
+    top: 200px;
+    left: 600px;
+    padding: 20px;
+    display: none;
+}
+
+.warning1>p{
+    margin-top: 30px;
+}
+
+.warning1>button{
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: pink;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+
+}
+
+.warning2{
+    width: 550px;
+    height: 150px;
+    background-color: pink;
+    position: absolute;
+    top: 200px;
+    left: 600px;
+    padding: 20px;
+    display: none;
+}
+
+.warning2>p{
+    margin-top: 30px;
+}
+
+.warning2>button{
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: pink;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+
+}
+
+.row{
+    display: flex;
+    align-items:  center;
+    font-size: 18px;
+}
+
+.checkbox{
+    margin: 0;
+    height: 15px;
+    margin-right: 5px;
+}
